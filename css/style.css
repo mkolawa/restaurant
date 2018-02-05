@@ -75,10 +75,37 @@ header:before{
     font-size: 0.9em;
 }
 .menu{padding-left: 0;}
+nav button span{
+    margin-bottom: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 4px;
+    background:#7fa12f;
+    position: relative;
+}
+nav button span:after{
+    content: "";
+    width: 40px;
+    height: 4px;
+    background:#7fa12f;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+nav button span:before{
+    content: "";
+    width: 40px;
+    height: 4px;
+    background:#7fa12f;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
 .social {
     position: absolute;
     top: -12px;
-    right:100px;
+    right:0px;
     font-size: 50px;
 }
 .social a i:hover{
@@ -87,7 +114,7 @@ header:before{
 .social i{color: white; }
 .phone{
     position: absolute;
-    right:100px;
+    right:0px;
     font-size: 0.7em;
     color: #ffffff;
     top: 100px;
@@ -228,7 +255,7 @@ header:before{
     width:100%;
     border: 3px solid #75981f63;
     height: 25vh;
-    background:#d5e1b71f;
+    background: #94b9393d;
     position: relative;
     z-index: 100;
 }
@@ -239,7 +266,7 @@ header:before{
     text-shadow: 1px 1px 1px #222322;
 }
 .item:hover{
-    background: #5d820a;
+    background:#5d820ae0;
 }
 .item h3 {
     font-size:1.7em;
@@ -319,7 +346,7 @@ header:before{
     position: absolute;
 }
 .picture:hover .middle h4{
-    background: #3c7b22;
+    background: #3c7b22bd;
 }
 .middle{
     justify-content: center;
@@ -489,7 +516,7 @@ footer .social i{font-size: 2em}
     font-size: 2.5em;
 }
 /******************menu*******************/
-#menu .container{
+.bg menu{
     background: url(../img/menu.png)no-repeat center;
     box-shadow: 0px 1px 19px #2c2d2c;
 }
@@ -577,10 +604,124 @@ form{
 .form-control{
         border: 1px solid #809c46;
 }
-
-
-
-
+header .row{position: relative;}
+/****************************************/
+@media only screen and (max-width: 1210px){
+    .menu .list{
+        margin-right: 0;
+    }
+    header .phone{
+        display: flex;
+        bottom: 0;
+        top: initial;
+    }
+    header .phone p{padding: 0 10px;}
+    .item h3 {
+    font-size: 1.3em;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .text-menu{
+        left: 25px;
+    }
+    #logo img{
+        width: 110px;
+    }
+    .item{
+        height: 16vh;
+    }
+    .item h3 {
+    font-size: 1.1em;
+    }
+}
+@media only screen and (max-width: 990px){
+    .picture img {
+    max-width: 148%;
+    }   
+}
+@media only screen and (max-width: 890px){
+    .menu .list{
+        width: 130px;
+    }
+    #logo h1{
+        font-size: 1.1em;
+        padding: 2px;
+    }
+}
+@media only screen and (max-width: 800px){
+     .social{
+        right: -10px;
+    }
+    header:before{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    header .container-fluid{
+        padding: 0;
+    }
+    .dropdown-menu.show{
+        width: 100%;
+    }
+    .menu{
+        display: none;
+    }
+    #logo{
+        background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #7faa1de3 40%, #6a8912de 70%, #638014c9 90%);
+    }
+    #logo h1 {
+        font-size: 0.7em;
+        padding: 2px;
+    }
+    #logo img {
+        width: 43px;
+    } 
+    #logo img {
+        width: 45px;
+    }
+    .picture h4 {
+        padding: 25px;
+    }
+    .social {
+        right: 22px;
+        top: 0;
+        font-size: 45px;
+    }
+    header .phone{
+        display:block;
+        top:10px;
+        bottom: initial;
+        background: none;
+        left: -10px;
+        font-size: 1em;
+    }
+    #brand{
+        height: 140px;
+    }
+     header .phone p{margin-bottom: 0px;}
+    .menu .list{
+        margin
+    }
+    .item {
+    height: 10vh;
+    margin-bottom: 5px;
+    }
+       .picture img {
+    max-width: 100%;
+    } 
+    footer .phone,footer #logo, footer h6, .made p{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 380px){
+     header .phone{
+        font-size:0.9em;
+        line-height: 1.5;
+    }
+    
+}
 
 
 
