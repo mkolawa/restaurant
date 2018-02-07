@@ -633,7 +633,7 @@ header .row{position: relative;}
     text-shadow: 1px 1px 10px #000000;
 }
 #oferta p{
-    padding:25px 35px;
+    padding:25px 5px;
     font-family: 'Lato', sans-serif;
 }
 .container-fluid:after{
