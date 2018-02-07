@@ -700,7 +700,9 @@ header .row{position: relative;}
     header:before{
         display: none;
     }
-    
+	.offer{
+    height:50vh;
+    } 
 }
 @media only screen and (max-width: 768px){
     header .container-fluid{
