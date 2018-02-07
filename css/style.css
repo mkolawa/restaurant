@@ -4,6 +4,9 @@ body {
 a:hover{text-decoration: none; }
 header{background: url(../img/tlo.jpg)no-repeat center;
 }
+.btn-secondary:not(:disabled):not(.disabled):active{
+        background-color: #000000bf;
+}
 header:before{
     border-bottom: 10px solid #1d1c1cb0;
     content: "";
@@ -16,9 +19,6 @@ header:before{
 .center{
     max-width:1150px;
     margin: 0 auto;
-}
-.top{
-    margin-bottom: 30px;
 }
 #brand{
     padding: 0; 
@@ -84,6 +84,9 @@ nav button span{
     background:#7fa12f;
     position: relative;
 }
+.navbar{
+    padding: 0;
+}
 nav button span:after{
     content: "";
     width: 40px;
@@ -91,7 +94,7 @@ nav button span:after{
     background:#7fa12f;
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -8px;
 }
 nav button span:before{
     content: "";
@@ -100,7 +103,7 @@ nav button span:before{
     background:#7fa12f;
     position: absolute;
     left: 0;
-    top: -10px;
+    top: -8px;
 }
 .social {
     position: absolute;
@@ -153,7 +156,7 @@ nav button span:before{
     position: relative;
     display: inline-block;
     width: 160px;
-    margin-right: 30px;
+    margin-right: 60px;
 }
 .link_navigation > img{
     width: 130px;
@@ -192,9 +195,23 @@ nav button span:before{
     background: #ffffff00;
     left: 0;
 }
+.breadcrumb{
+    background-color: #373837;
+    padding: 0 1rem;
+}
+.breadcrumb-item.active {
+    color: #c3c3c3;
+}
+.breadcrumb-item a{
+    color: #738a29;
+}
+.breadcrumb-item a:hover{
+    color: #849b39;
+}
 #welcome{
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
+    margin-top: 30px;
 }
 .under{
     background: url(../img/our-restaurant.jpg)left;
@@ -208,7 +225,7 @@ nav button span:before{
     margin-bottom:0;
   
 }
-.text h2:before{
+.text h2:before, #wedding p:before{
     content: "";
     position: absolute;
     width: 100px;
@@ -217,7 +234,7 @@ nav button span:before{
     left: 5px;
     top: 5px;
 }
-.text h2:after{
+.text h2:after, #wedding p:after{
     content: "";
     position: absolute;
     width: 100px;
@@ -279,19 +296,6 @@ nav button span:before{
     padding: 10px;
     position: relative;
 }
-/*#wrap:after{
-    content: "";
-    display: block;
-    position: absolute;
-    background: url(../img/drinks.jpg)no-repeat;
-    width: 100%;
-    height: auto;
-    top: 0;
-    bottom: 0;
-    z-index: 0;
-    border-radius: 50%;
-     overflow: hidden;
-}*/
 .round{
     border:1px solid #ffffff8a;
     background:url(../img/drinks.jpg)no-repeat left;
@@ -322,9 +326,6 @@ nav button span:before{
     background: url(../img/rosemary.jpg)no-repeat center;
     background-attachment: fixed;
     position: relative;
-}
-#menu .container{
-    background: #ffffffad;
 }
 #menu h2{color:#3c7b22c4; font-size: 3em; padding-top: 10px;}
 #menu h2:hover{color: #4e733f;}
@@ -469,7 +470,6 @@ footer .social i{font-size: 2em}
     background-attachment: fixed;
     position: relative;
     z-index: 1;
-    padding-top: 20px;
     font-family: 'Lato', sans-serif;
    
 }
@@ -516,7 +516,7 @@ footer .social i{font-size: 2em}
     font-size: 2.5em;
 }
 /******************menu*******************/
-.bg menu{
+.bg-menu{
     background: url(../img/menu.png)no-repeat center;
     box-shadow: 0px 1px 19px #2c2d2c;
 }
@@ -547,7 +547,6 @@ footer .social i{font-size: 2em}
     text-shadow: 1px 1px 1px #1c1d1c;
 }
 .content h5{
-    display: inline-block;
     margin-top: 3px;
 }
 .content i{
@@ -572,7 +571,7 @@ footer .social i{font-size: 2em}
     z-index:1;
 }
 .above:hover  h4{
-    background:#3c7b22;
+    background:#3c7b22ac;
 }
 .above h4{
     border: 1px solid #c7bbbb;
@@ -605,24 +604,64 @@ form{
         border: 1px solid #809c46;
 }
 header .row{position: relative;}
+/***********************ofer**********************/
+#oferta{margin-top: -16px;}
+#oferta .container-fluid{
+    padding: 0;
+}
+.bg_wedding{
+    background: url(../img/wedding.jpg)no-repeat center;
+}
+.banquet{
+    background: url(../img/banquet.jpg)no-repeat center;
+}
+.catering {background: url(../img/catering.jpg)no-repeat center;
+}
+.graduation_ball{background: url(../img/ball.jpg)no-repeat center;
+}
+.party{background: url(../img/party.jpg)no-repeat center;
+}
+.service{
+    background: url(../img/party.jpg)no-repeat center;
+}
+.offer{
+    background-attachment: fixed;
+    height:41vh;
+} 
+.offer h2{
+    color: #daded4;
+    text-shadow: 1px 1px 10px #000000;
+}
+#oferta p{
+    padding:25px 35px;
+    font-family: 'Lato', sans-serif;
+}
+.container-fluid:after{
+    display: none;
+}
 /****************************************/
 @media only screen and (max-width: 1210px){
     .menu .list{
-        margin-right: 0;
+        margin-right:30px;
     }
     header .phone{
         display: flex;
         bottom: 0;
         top: initial;
     }
-    header .phone p{padding: 0 10px;}
+    header .phone p{padding: 0 2px;}
     .item h3 {
     font-size: 1.3em;
     }
 }
+@media only screen and (max-width: 1030px){
+     .menu .list{
+        margin-right:15px;
+    }
+}
 @media only screen and (max-width: 1000px){
     .text-menu{
-        left: 25px;
+        left:0;
     }
     #logo img{
         width: 110px;
@@ -638,6 +677,9 @@ header .row{position: relative;}
     .picture img {
     max-width: 148%;
     }   
+    .menu .list{
+        margin-right:0;
+    }
 }
 @media only screen and (max-width: 890px){
     .menu .list{
@@ -646,6 +688,9 @@ header .row{position: relative;}
     #logo h1{
         font-size: 1.1em;
         padding: 2px;
+    }
+    .text-menu {
+        left: 24px;
     }
 }
 @media only screen and (max-width: 800px){
@@ -720,7 +765,14 @@ header .row{position: relative;}
         font-size:0.9em;
         line-height: 1.5;
     }
-    
+    .content h5{
+        font-size: 1rem;
+        margin:0;
+        padding: 1px;
+    }
+    .content p{
+        margin: 0;
+    }
 }
 
 
