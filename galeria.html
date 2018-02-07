@@ -13,25 +13,26 @@
        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-       <header>
-        <div class="container top">
+              <header>
+        <div class="container-fluid top">
             <div class="row">
                 <div id="brand" class="col-md-2">
                     <div id="logo">
                         <a href="index.html"><img class="img-responsive" src="img/logo.png" alt="logo"/>
                         <h1><p>RESTAURACJA</p>POD JABŁONIĄ</h1></a>
                     </div>
-                    <div class="btn-group" role="group">
-                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><p></p></button>
+                    <nav role="navigation">
+                    <div class=" navbar btn-group" >
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary navbar-toggle collapsed" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span></span> </button>
                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                          <a class="dropdown-item" href="#">WESELA</a>
-                          <a class="dropdown-item" href="#">BANKIETY</a>
-                          <a class="dropdown-item" href="#">STUDNIÓWKI</a>
-                          <a class="dropdown-item" href="#">CATERING</a>
-                          <a class="dropdown-item" href="#">OBSŁUGA W REMIZACH</a>
-                          <a class="dropdown-item" href="#">IMPREZY OKOLICZNOŚCIOWE</a>
+                          <a class="dropdown-item" href="menu.html">MENU</a>
+                          <a class="dropdown-item" href="galeria.html">GALERIA</a>
+                          <a class="dropdown-item" href="kontakt.html">KONTAKT</a>
+                          <a class="dropdown-item" href="o_nas.html">O NAS</a>
+                          <a class="dropdown-item" href="oferta.html">OFERTA</a>
                         </div>
                     </div>
+                    </nav>
                 </div>
                      <nav role="navigation"  class="col-md-10" center>
                          <div class="menu col-md-12">
@@ -63,6 +64,10 @@
           </div>
         </header>
         <main>
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Strona Główna</a></li>
+              <li class="breadcrumb-item active">Galeria</li>
+          </ol>
         <div class=" head text-center">
          <h1 >GALERIA</h1>
          <p > Duis feugiat enim et dolor gravida, vel aliquet metus efficitur. Mauris id dignissim dolor, vel aliquet libero. Suspendisse condimentum nulla consectetur, vulputate odio in, pharetra nisi. Pellentesque non justo ex. Mauris vitae lacinia lectus. Maecenas interdum urna pellentesque vestibulum convallis. </p></div>
@@ -99,7 +104,7 @@
             <div class="container">
                  <div class="row col-md-12">
                       <div class="text-left col-md-5">
-                            <div class="text-left phone">
+                            <div class=" phone">
                                 <p><i class="fa fa-phone" aria-hidden="true"></i>18 111 23 45</p>
                                 <p ><i class="fa fa-mobile" aria-hidden="true"></i>123 456 789</p>
                                 <p><i class="fa fa-map-marker" aria-hidden="true"></i>Łącko 628</p>
@@ -107,7 +112,7 @@
                       </div>
                       <div class="col-md-2">
                           <div id="logo">
-                            <a href=""><img class="img-responsive" src="img/logo.png" alt="logo"/>
+                            <a href="index.html"><img class="img-responsive" src="img/logo.png" alt="logo"/>
                             <h1><p>RESTAURACJA</p>POD JABŁONIĄ</h1></a>
                           </div>
                       </div>
