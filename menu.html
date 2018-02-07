@@ -14,41 +14,42 @@
     </head>
     <body>
        <header>
-        <div class="container top">
+        <div class="container-fluid top">
             <div class="row">
                 <div id="brand" class="col-md-2">
                     <div id="logo">
-                        <a href="index.html"><img class="img-responsive" src="img/logo.png" alt="logo"/>
+                        <a href=""><img class="img-responsive" src="img/logo.png" alt="logo"/>
                         <h1><p>RESTAURACJA</p>POD JABŁONIĄ</h1></a>
                     </div>
-                    <div class="btn-group" role="group">
-                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><p></p></button>
+                    <nav role="navigation">
+                    <div class=" navbar btn-group" >
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary navbar-toggle collapsed" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span></span> </button>
                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                          <a class="dropdown-item" href="#">WESELA</a>
-                          <a class="dropdown-item" href="#">BANKIETY</a>
-                          <a class="dropdown-item" href="#">STUDNIÓWKI</a>
-                          <a class="dropdown-item" href="#">CATERING</a>
-                          <a class="dropdown-item" href="#">OBSŁUGA W REMIZACH</a>
-                          <a class="dropdown-item" href="#">IMPREZY OKOLICZNOŚCIOWE</a>
+                          <a class="dropdown-item" href="menu.html">MENU</a>
+                          <a class="dropdown-item" href="galeria.html">GALERIA</a>
+                          <a class="dropdown-item" href="kontakt.html">KONTAKT</a>
+                          <a class="dropdown-item" href="o_nas.html">O NAS</a>
+                          <a class="dropdown-item" href="oferta.html">OFERTA</a>
                         </div>
                     </div>
+                    </nav>
                 </div>
                      <nav role="navigation"  class="col-md-10" center>
                          <div class="menu col-md-12">
                             <div  class="list col-md-3">
-                                <a href="menu.html" class="link_navigation"><img class="rounded-circle" src="img/menu.jpg" alt="menu" >
+                                <a href="" class="link_navigation"><img class="rounded-circle" src="img/menu.jpg" alt="menu" >
                                 <h2 class="text-menu">Menu</h2></a>
                             </div >
                             <div  class="list col-md-3">
-                                <a href="galeria.html" class="link_navigation"><img class="rounded-circle" src="img/restaurant.jpg" alt="galeria" >
+                                <a href="" class="link_navigation"><img class="rounded-circle" src="img/restaurant.jpg" alt="galeria" >
                                 <h2 class="text-menu">Galeria</h2></a>
                             </div>
                             <div class="list col-md-3">
-                                <a href="kontakt.html" class="link_navigation"><img class="rounded-circle" src="img/contact.jpg" alt="kontakt">
+                                <a href="" class="link_navigation"><img class="rounded-circle" src="img/contact.jpg" alt="kontakt">
                                 <h2 class="text-menu">Kontakt</h2></a>
                             </div>
                             <div role="presentation" class="list col-md-3">
-                                <a href="o_nas.html" class="link_navigation"><img class="rounded-circle" src="img/about.jpg" alt="kontakt" >
+                                <a href="" class="link_navigation"><img class="rounded-circle" src="img/about.jpg" alt="kontakt" >
                                 <h2 class="text-menu">O nas</h2></a>
                             </div>
                         </div>
@@ -63,8 +64,12 @@
           </div>
         </header>
         <main>
-           <section id="menu" class="bg">
-               <div class="text-center container">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Strona Główna</a></li>
+              <li class="breadcrumb-item active">Menu</li>
+          </ol>
+           <section id="menu" >
+               <div class="text-center bg-menu container">
                     <h2>MENU-zobacz karty dań</h2>
                       <p class="description">Proin non luctus risus. Nunc urna nisi, sagittis sit amet vehicula ac, bibendum sit amet ante. Vivamus lacinia risus vitae suscipit dictum. Nullam in molestie nibh. Quisque convallis lacus a porta egestas. Praesent ullamcorper, nulla ac faucibus scelerisque, nibh arcu accumsan justo, vel aliquam libero mauris quis ante. Duis cursus sagittis euismod.</p>
                     <div class="option row col-md-12">
@@ -121,7 +126,6 @@
                                 </div>                        
                     </div>
                       </div>
-       
                     </div>
                     <div class="option row col-md-12">
                       <div class="col-md-6">
@@ -195,10 +199,10 @@
                                 </div>
                             </div>
                       </div>
-                          <div class="col-md-6">
+                      <div class="col-md-6">
                             <a class=" " data-toggle="collapse" href="#drinks" role="button" aria-expanded="false" aria-controls="drinks"><div class="above middle"><img src="img/coffeee.jpg" alt="napoje" class="img-responsive"/><h4>NAPOJE</h4></div></a>
-                            <div class="collapse" id="drinks">
-                                <div class="card card-body">
+                          <div class="collapse" id="drinks">
+                            <div class="card card-body">
                                     <div class="dish">
                                           <p>COLA</p><p>3 zł</p>
                                     </div>
@@ -214,10 +218,9 @@
                                     <div class="dish">
                                         <p>PIWO</p><p>5 zł</p>
                                     </div>
-                                </div>                        
-                    </div>
+                            </div>                        
+                        </div>
                       </div>
-       
                     </div>
                </div>      
            </section>
@@ -226,7 +229,7 @@
             <div class="container">
                  <div class="row col-md-12">
                       <div class="text-left col-md-5">
-                            <div class="text-left phone">
+                            <div class=" phone">
                                 <p><i class="fa fa-phone" aria-hidden="true"></i>18 111 23 45</p>
                                 <p ><i class="fa fa-mobile" aria-hidden="true"></i>123 456 789</p>
                                 <p><i class="fa fa-map-marker" aria-hidden="true"></i>Łącko 628</p>

@@ -14,41 +14,42 @@
     </head>
     <body>
        <header>
-        <div class="container top">
+        <div class="container-fluid top">
             <div class="row">
                 <div id="brand" class="col-md-2">
                     <div id="logo">
-                        <a href="index.html"><img class="img-responsive" src="img/logo.png" alt="logo"/>
+                        <a href=""><img class="img-responsive" src="img/logo.png" alt="logo"/>
                         <h1><p>RESTAURACJA</p>POD JABŁONIĄ</h1></a>
                     </div>
-                    <div class="btn-group" role="group">
-                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><p></p></button>
+                    <nav role="navigation">
+                    <div class=" navbar btn-group" >
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary navbar-toggle collapsed" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span></span> </button>
                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                          <a class="dropdown-item" href="#">WESELA</a>
-                          <a class="dropdown-item" href="#">BANKIETY</a>
-                          <a class="dropdown-item" href="#">STUDNIÓWKI</a>
-                          <a class="dropdown-item" href="#">CATERING</a>
-                          <a class="dropdown-item" href="#">OBSŁUGA W REMIZACH</a>
-                          <a class="dropdown-item" href="#">IMPREZY OKOLICZNOŚCIOWE</a>
+                          <a class="dropdown-item" href="menu.html">MENU</a>
+                          <a class="dropdown-item" href="galeria.html">GALERIA</a>
+                          <a class="dropdown-item" href="kontakt.html">KONTAKT</a>
+                          <a class="dropdown-item" href="o_nas.html">O NAS</a>
+                          <a class="dropdown-item" href="oferta.html">OFERTA</a>
                         </div>
                     </div>
+                    </nav>
                 </div>
                      <nav role="navigation"  class="col-md-10" center>
                          <div class="menu col-md-12">
                             <div  class="list col-md-3">
-                                <a href="menu.html" class="link_navigation"><img class="rounded-circle" src="img/menu.jpg" alt="menu" >
+                                <a href="" class="link_navigation"><img class="rounded-circle" src="img/menu.jpg" alt="menu" >
                                 <h2 class="text-menu">Menu</h2></a>
                             </div >
                             <div  class="list col-md-3">
-                                <a href="galeria.html" class="link_navigation"><img class="rounded-circle" src="img/restaurant.jpg" alt="galeria" >
+                                <a href="" class="link_navigation"><img class="rounded-circle" src="img/restaurant.jpg" alt="galeria" >
                                 <h2 class="text-menu">Galeria</h2></a>
                             </div>
                             <div class="list col-md-3">
-                                <a href="kontakt.html" class="link_navigation"><img class="rounded-circle" src="img/contact.jpg" alt="kontakt">
+                                <a href="" class="link_navigation"><img class="rounded-circle" src="img/contact.jpg" alt="kontakt">
                                 <h2 class="text-menu">Kontakt</h2></a>
                             </div>
                             <div role="presentation" class="list col-md-3">
-                                <a href="o_nas.html" class="link_navigation"><img class="rounded-circle" src="img/about.jpg" alt="kontakt" >
+                                <a href="" class="link_navigation"><img class="rounded-circle" src="img/about.jpg" alt="kontakt" >
                                 <h2 class="text-menu">O nas</h2></a>
                             </div>
                         </div>
@@ -63,6 +64,10 @@
           </div>
         </header>
         <main id="about">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Strona Główna</a></li>
+              <li class="breadcrumb-item active">O Nas</li>
+          </ol>
            <section>
                <div class="container">
                   <div class="top-about row col-md-12">
@@ -88,7 +93,7 @@
                                <div class="content">
                                   <h5><i class="fa fa-check" aria-hidden="true"></i>NISKIE CENY</h5>
                                   <p>Dbamy również o to, aby nasze potrawy były lekkostrawne finansowo ;)</p>
-                                  <a href="menu.html">
+                                  <a href="#menu">
                                <button class="more center btn-link">zobacz menu</button></a>  
                               </div>     
                            </div>
@@ -126,7 +131,7 @@
                               </div>   
                            </div>
                            <div class="my_card col-md-4">
-                               <img class="img-responsive" src="img/waiters.jpg" alt="stół bilardowy">
+                               <img class="img-responsive" src="img/waiters.jpg" alt="kelner">
                                <div class="content ">
                               <h5><i class="fa fa-check" aria-hidden="true"></i>CATERING</h5>
                               <h5><i class="fa fa-check" aria-hidden="true"></i>OBSŁUGA KELNERSKA</h5>
@@ -144,7 +149,7 @@
             <div class="container">
                  <div class="row col-md-12">
                       <div class="text-left col-md-5">
-                            <div class="text-left phone">
+                            <div class="phone">
                                 <p><i class="fa fa-phone" aria-hidden="true"></i>18 111 23 45</p>
                                 <p ><i class="fa fa-mobile" aria-hidden="true"></i>123 456 789</p>
                                 <p><i class="fa fa-map-marker" aria-hidden="true"></i>Łącko 628</p>
@@ -152,7 +157,7 @@
                       </div>
                       <div class="col-md-2">
                           <div id="logo">
-                            <a href="index.html"><img class="img-responsive" src="img/logo.png" alt="logo"/>
+                            <a href=""><img class="img-responsive" src="img/logo.png" alt="logo"/>
                             <h1><p>RESTAURACJA</p>POD JABŁONIĄ</h1></a>
                           </div>
                       </div>
@@ -174,6 +179,5 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/4e0e204e30.js"></script>
- 
     </body>
 </html>
