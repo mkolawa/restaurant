@@ -331,8 +331,9 @@ nav button span:before{
 #menu h2:hover{color: #4e733f;}
 #menu p{
     font-family: 'Lato', sans-serif;
+    font-size: 0.9em;
 }
-.description{padding: 5px 30px;}
+.description{padding: 5px 15px;}
 #menu row{
     border-bottom: 1px solid green;
 }
@@ -354,10 +355,22 @@ nav button span:before{
     display: flex;
     align-items: center;
 }
-.dish {border-bottom: 1px dotted black;height:30px;margin-top: 15px;}
-.dish p{
-    display: inline-block;
+.dish {
+    
+    height:30px;
+    margin-top: 15px;
 }
+.dish p:nth-child(1){
+    float: left;
+}
+.dish p:nth-child(2){
+    float: right;
+}
+.dish p span{float:right;}
+.card-body {
+    padding: 0.4rem;
+}
+.dish > div{border-bottom: 1px dotted black;}
 .dish p:nth-child(1){float: left;}
 .dish p:nth-child(2){float: right;}
 .more{display: flex;}
@@ -552,6 +565,8 @@ footer .social i{font-size: 2em}
 .content i{
     margin-right:10px;
 }
+.option{padding: 4px;}
+.option .col-md-6{padding: 0;}
 .option img{
     height: 200px;
     width: 240px;
@@ -626,7 +641,7 @@ header .row{position: relative;}
 }
 .offer{
     background-attachment: fixed;
-    height:41vh;
+    height:50vh;
 } 
 .offer h2{
     color: #daded4;
@@ -700,9 +715,7 @@ header .row{position: relative;}
     header:before{
         display: none;
     }
-	.offer{
-    height:50vh;
-    } 
+    
 }
 @media only screen and (max-width: 768px){
     header .container-fluid{
