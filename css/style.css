@@ -196,7 +196,7 @@ nav button span:before{
     left: 0;
 }
 .breadcrumb{
-    background-color: #373837;
+    background-color:#4a4a4a;
     padding: 0 1rem;
 }
 .breadcrumb-item.active {
@@ -327,6 +327,7 @@ nav button span:before{
     background-attachment: fixed;
     position: relative;
 }
+#menu .wbackground{background: #ffffffcf;}
 #menu h2{color:#3c7b22c4; font-size: 3em; padding-top: 10px;}
 #menu h2:hover{color: #4e733f;}
 #menu p{
@@ -356,7 +357,7 @@ nav button span:before{
     align-items: center;
 }
 .dish {
-    
+    border-bottom: 1px dotted black;
     height:30px;
     margin-top: 15px;
 }
@@ -566,13 +567,14 @@ footer .social i{font-size: 2em}
     margin-right:10px;
 }
 .option{padding: 4px;}
-.option .col-md-6{padding: 0;}
+
 .option img{
     height: 200px;
     width: 240px;
 }
 .card .dish{
     display: block;
+    border-bottom: 1px dotted black;
 }
 .above{margin-bottom: 20px;}
 .above:after{
