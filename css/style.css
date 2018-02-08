@@ -757,6 +757,7 @@ header .row{position: relative;}
         background: none;
         left: -10px;
         font-size: 1em;
+        width: 41%;
     }
     #brand{
         height: 140px;
