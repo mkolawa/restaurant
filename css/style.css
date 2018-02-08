@@ -538,16 +538,18 @@ footer .social i{font-size: 2em}
     margin-bottom:30px;
     position: relative;
     overflow: hidden;
-    padding-right: 0;
+    padding: 5px;
 }
 .my_card:after{
-    content:"";
+    content: "";
     position: absolute;
     display: block;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background:#5c751054;
+    top: 4px;
+    left: 4px;
+    right: 0px;
+    bottom: 4px;
+    width: 98%;
+    background: #5c751054;
     z-index: 100;
 }
 .my_card img{
@@ -555,14 +557,13 @@ footer .social i{font-size: 2em}
 }
 .content{
     position: absolute;
-    top: 0;
+    top:20px;
     z-index: 1000;
     color: #fff;
     text-shadow: 1px 1px 1px #1c1d1c;
+    width: 100%;
 }
-.content h5{
-    margin-top: 3px;
-}
+.content p{padding: 5px; margin-bottom:0; }
 .content i{
     margin-right:10px;
 }
@@ -687,17 +688,20 @@ header .row{position: relative;}
         height: 16vh;
     }
     .item h3 {
-    font-size: 1.1em;
+        font-size: 1.1em;
     }
 }
-@media only screen and (max-width: 990px){
+@media only screen and (max-width: 991px){
     .picture img {
-    max-width: 148%;
+        max-width: 148%;
     }   
     .menu .list{
         margin-right:0;
     }
-}
+    .my_card{
+        flex: 0 0 75.333333%;
+        max-width: 75.333333%;
+    }
 @media only screen and (max-width: 890px){
     .menu .list{
         width: 130px;
@@ -770,13 +774,19 @@ header .row{position: relative;}
     height: 10vh;
     margin-bottom: 5px;
     }
-       .picture img {
+    .picture img {
     max-width: 100%;
     } 
     footer .phone,footer #logo, footer h6, .made p{
       text-align: center;
       margin-bottom: 20px;
     }
+}
+    @media only screen and (max-width: 768px){
+        .my_card{
+        flex: initial;
+        max-width:initial;
+        }
 }
 @media only screen and (max-width: 380px){
      header .phone{
@@ -790,6 +800,9 @@ header .row{position: relative;}
     }
     .content p{
         margin: 0;
+    }
+    .content {
+    top: 5px;
     }
 }
 
