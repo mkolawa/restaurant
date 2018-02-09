@@ -196,11 +196,11 @@ nav button span:before{
     left: 0;
 }
 .breadcrumb{
-    background-color:#4a4a4a;
+    background-color:#e4e4e4;
     padding: 0 1rem;
 }
 .breadcrumb-item.active {
-    color: #c3c3c3;
+    color: #8c8c8c;
 }
 .breadcrumb-item a{
     color: #738a29;
