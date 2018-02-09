@@ -540,6 +540,9 @@ footer .social i{font-size: 2em}
     overflow: hidden;
     padding: 5px;
 }
+.my_card:hover:after {
+background:#7a9822de;
+}
 .my_card:after{
     content: "";
     position: absolute;
@@ -552,6 +555,7 @@ footer .social i{font-size: 2em}
     background: #5c751054;
     z-index: 100;
 }
+.my_card h5{font-size: 1.2rem;}
 .my_card img{
     max-width: 100%;
 }
