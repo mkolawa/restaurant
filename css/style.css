@@ -5,7 +5,7 @@ a:hover{text-decoration: none; }
 header{background: url(../img/tlo.jpg)no-repeat center;
 }
 .btn-secondary:not(:disabled):not(.disabled):active{
-        background-color: #000000bf;
+    background-color: #000000bf;
 }
 header:before{
     border-bottom: 10px solid #1d1c1cb0;
@@ -775,7 +775,7 @@ header .row{position: relative;}
         margin
     }
     .item {
-    height: 10vh;
+   
     margin-bottom: 5px;
     }
     .picture img {
