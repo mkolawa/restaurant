@@ -694,6 +694,8 @@ header .row{position: relative;}
     .item h3 {
         font-size: 1.1em;
     }
+    .gal {
+    column-count: 2;
 }
 @media only screen and (max-width: 991px){
     .picture img {
@@ -767,6 +769,9 @@ header .row{position: relative;}
         font-size: 1em;
         width: 41%;
     }
+    .gal {
+        column-count: 1;
+    }
     #brand{
         height: 140px;
     }
@@ -775,7 +780,6 @@ header .row{position: relative;}
         margin
     }
     .item {
-   
     margin-bottom: 5px;
     }
     .picture img {
@@ -786,7 +790,7 @@ header .row{position: relative;}
       margin-bottom: 20px;
     }
 }
-    @media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
         .my_card{
         flex: initial;
         max-width:initial;
