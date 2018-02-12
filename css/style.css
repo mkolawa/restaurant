@@ -730,9 +730,6 @@ header .row{position: relative;}
     
 }
 @media only screen and (max-width: 768px){
-    main{
-        margin-top: 97px;
-    }
     header .container-fluid{
         padding: 0;
     }
@@ -775,11 +772,6 @@ header .row{position: relative;}
     .gal {
         column-count: 1;
     }
-    #brand, .social, .phone{
-        height: 140px;
-        position: fixed;
-        z-index: 10000;
-    }
      header .phone p{margin-bottom: 0px;}
     .item {
     margin-bottom: 5px;
@@ -791,10 +783,20 @@ header .row{position: relative;}
       text-align: center;
       margin-bottom: 20px;
     }
-        .my_card{
+    .my_card{
         flex: initial;
         max-width:initial;
         }
+}
+@media only screen and (max-width: 500px){
+    #brand, .social, .phone{
+        height: 140px;
+        position: fixed;
+        z-index: 1000;
+    }
+    main{
+        margin-top: 97px;
+    }
 }
 @media only screen and (max-width: 380px){
      header .phone{
@@ -817,8 +819,7 @@ header .row{position: relative;}
 
 
 
-
-
+   
 
 
 
