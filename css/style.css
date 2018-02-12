@@ -788,7 +788,7 @@ header .row{position: relative;}
         max-width:initial;
         }
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 400px){
     #brand, .social, .phone{
         height: 140px;
         position: fixed;
