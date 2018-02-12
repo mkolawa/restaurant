@@ -730,6 +730,9 @@ header .row{position: relative;}
     
 }
 @media only screen and (max-width: 768px){
+    main{
+        margin-top: 97px;
+    }
     header .container-fluid{
         padding: 0;
     }
