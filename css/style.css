@@ -780,6 +780,7 @@ header .row{position: relative;}
         left: -10px;
         font-size: 1em;
         width: 41%;
+        height: 50px;
     }
     .gal {
         column-count: 1;
