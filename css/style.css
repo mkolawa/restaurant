@@ -119,12 +119,12 @@ nav button span:before{
     position: absolute;
     right:0px;
     font-size: 0.7em;
-    color: #ffffff;
     top: 100px;
     font-size: 1.5em;
     text-shadow: 1px 1px 1px #1d1d1d;
     background: #0000004a;
 }
+.phone a{color: #ffffff;}
 .phone i{
     display:inline;
     margin:10px;
@@ -458,6 +458,18 @@ footer .social{
 }
 footer h6{color:#b9b5b5;}
 footer .social i{font-size: 2em}
+.scrollup i{
+    font-size: 40px; 
+    color: #97b663cc;
+    position: fixed;
+    right: 20px;
+    bottom: 55px;
+    z-index: 100;
+}
+.scrollup i:hover{
+    color: #97b663;
+}
+a.scrollup{width: 30px; height: 30px;}
 .made{color:#424442;}
 /*****************************************GALERY************/
 .gal {
@@ -661,7 +673,7 @@ header .row{position: relative;}
 .container-fluid:after{
     display: none;
 }
-/****************************************/
+/***********************queries*****************/
 @media only screen and (max-width: 1210px){
     .menu .list{
         margin-right:30px;
