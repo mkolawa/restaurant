@@ -751,6 +751,7 @@ header .row{position: relative;}
     .menu{
         display: none;
     }
+    #brand{height: 140px;}
     #logo{
         background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #7faa1de3 40%, #6a8912de 70%, #638014c9 90%);
     }
@@ -803,7 +804,6 @@ header .row{position: relative;}
 }
 @media only screen and (max-width: 400px){
     #brand, .social, .phone{
-        height: 140px;
         position: fixed;
         z-index: 1000;
     }
